@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+    <style>
+      .wrapper {
+        display: flex;
+        width: 100%;
+        overflow-x: scroll;
+        gap: 20px;
+        scroll-snap-type: x mandatory;
+      }
+
+      .card {
+        scroll-snap-align: center;
+        box-sizing: border-box;
+        flex-shrink: 0;
+        width: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="bg-black py-3">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 bg-black"
+      >
+        <a
+          href="/home"
+          class="flex ml-5 items-center space-x-3 text-white font-bold rtl:space-x-reverse"
+        >
+          <img src="image/img/logo-smk.png" class="w-24" alt="" />
+          <span> SMK NEGERI 1 BP BANGSA RAJA </span>
+        </a>
+
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-black md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="text-white bg-black hover:font-extrabold rounded-md px-3 py-2 font-medium"
+              >
+                Home
+              </a>
+            </li>
+
+            <li>
+              <button
+                id="dropdownNavbarLink"
+                data-dropdown-toggle="dropdownNavbar"
+                class="flex items-center justify-between w-full pt-2 px-3 text-white rounded md:border-0 hover:text-white md:pr-2 md:p-0 w-auto bg-black"
+              >
+                Profile
+                <svg
+                  class="w-2.5 h-2.5 ms-2.5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </button>
+
+              <!-- Dropdown menu -->
+              <div
+                id="dropdownNavbar"
+                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+              >
+                <ul
+                  class="py-2 text-sm text-black"
+                  aria-labelledby="dropdownLargeButton"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-[#398FBF] text-black"
+                      >Data sekolah</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-[#398FBF] hover:text-white"
+                      >Sejarah</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-[#398FBF] hover:text-white"
+                      >Profile Sekolah</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <button
+                id="dropdownNavbarLink"
+                data-dropdown-toggle="dropdownNavbar2"
+                class="flex items-center justify-between w-full py-2 px-3 text-white rounded md:border-0 hover:text-white md:pr-10 md:p-0 w-auto bg-black"
+              >
+                Informasi
+                <svg
+                  class="w-2.5 h-2.5 ms-2.5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </button>
+
+              <!-- Dropdown menu -->
+              <div
+                id="dropdownNavbar2"
+                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+              >
+                <ul
+                  class="py-2 text-sm text-black"
+                  aria-labelledby="dropdownLargeButton"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-[#398FBF] text-black"
+                      >Visi & Misi</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div>
+      <img
+        src="image/img/smkn1bpbangsaraja.jpg"
+        class="w-full"
+        alt="SMK Negeri 1 BP Bangsa Raja"
+      />
+    </div>
+
+    <!-- berita -->
+    <div class="px-5 mt-12 md:px-20 md:mt-24">
+      <div>
+        <p class="text-3xl font-bold md:text-5xl">
+          <span class="border-t-4 border-[#FF0000]">BERITA</span>
+          <span class="text-[#398FBF]">TERBARU</span>
+        </p>
+        <p class="text-[#2E1616] text-xl font-bold md:text-2xl">
+          Update Terbaru Seputar Sekolah
+        </p>
+      </div>
+
+      <div class="wrapper mt-5 mb-5">
+        <!-- 1 -->
+        <div class="card w-72 md:w-96 bg-[#3183C6]/75 rounded-lg drop-shadow">
+          <img src="image/activity/1.jpeg" class="rounded-t-lg" alt="" />
+          <p
+            class="px-2 pt-[5px] text-[11px] md:text-[15px] font-bold text-center"
+          >
+            Update Terbaru: Kunjungan Industri ke Goa Jatijajar
+          </p>
+          <div class="px-4 mt-1 pb-3">
+            <p
+              class="px-2 text-[12px] bg-[#EF3790]/75 rounded-lg drop-shadow-lg md:text-base"
+            >
+              Dalam kunjungan terbaru ini, siswa berkesempatan mengunjungi Goa
+              Jatijajar sebagai bagian dari program industri. Mereka tidak hanya
+              mendapatkan wawasan tentang kekayaan alam, tetapi juga belajar
+              tentang nilai budaya dan sejarah gua.
+            </p>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="card w-72 md:w-96 bg-[#3183C6]/75 rounded-lg drop-shadow">
+          <img src="image/activity/1.jpeg" class="rounded-t-lg" alt="" />
+          <p
+            class="px-2 pt-[5px] text-[11px] md:text-[15px] font-bold text-center"
+          >
+            Update Terbaru: Kunjungan Industri ke Goa Jatijajar
+          </p>
+          <div class="px-4 mt-1 pb-3">
+            <p
+              class="px-2 text-[12px] bg-[#EF3790]/75 rounded-lg drop-shadow-lg md:text-base"
+            >
+              Dalam kunjungan terbaru ini, siswa berkesempatan mengunjungi Goa
+              Jatijajar sebagai bagian dari program industri. Mereka tidak hanya
+              mendapatkan wawasan tentang kekayaan alam, tetapi juga belajar
+              tentang nilai budaya dan sejarah gua.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="card w-72 md:w-96 bg-[#3183C6]/75 rounded-lg drop-shadow">
+          <img src="image/activity/1.jpeg" class="rounded-t-lg" alt="" />
+          <p
+            class="px-2 pt-[5px] text-[11px] md:text-[15px] font-bold text-center"
+          >
+            Update Terbaru: Kunjungan Industri ke Goa Jatijajar
+          </p>
+          <div class="px-4 mt-1 pb-3">
+            <p
+              class="px-2 text-[12px] bg-[#EF3790]/75 rounded-lg drop-shadow-lg md:text-base"
+            >
+              Dalam kunjungan terbaru ini, siswa berkesempatan mengunjungi Goa
+              Jatijajar sebagai bagian dari program industri. Mereka tidak hanya
+              mendapatkan wawasan tentang kekayaan alam, tetapi juga belajar
+              tentang nilai budaya dan sejarah gua.
+            </p>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="card w-72 md:w-96 bg-[#3183C6]/75 rounded-lg drop-shadow">
+          <img src="image/activity/1.jpeg" class="rounded-t-lg" alt="" />
+          <p
+            class="px-2 pt-[5px] text-[11px] md:text-[15px] font-bold text-center"
+          >
+            Update Terbaru: Kunjungan Industri ke Goa Jatijajar
+          </p>
+          <div class="px-4 mt-1 pb-3">
+            <p
+              class="px-2 text-[12px] bg-[#EF3790]/75 rounded-lg drop-shadow-lg md:text-base"
+            >
+              Dalam kunjungan terbaru ini, siswa berkesempatan mengunjungi Goa
+              Jatijajar sebagai bagian dari program industri. Mereka tidak hanya
+              mendapatkan wawasan tentang kekayaan alam, tetapi juga belajar
+              tentang nilai budaya dan sejarah gua.
+            </p>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="card w-72 md:w-96 bg-[#3183C6]/75 rounded-lg drop-shadow">
+          <img src="image/activity/1.jpeg" class="rounded-t-lg" alt="" />
+          <p
+            class="px-2 pt-[5px] text-[11px] md:text-[15px] font-bold text-center"
+          >
+            Update Terbaru: Kunjungan Industri ke Goa Jatijajar
+          </p>
+          <div class="px-4 mt-1 pb-3">
+            <p
+              class="px-2 text-[12px] bg-[#EF3790]/75 rounded-lg drop-shadow-lg md:text-base"
+            >
+              Dalam kunjungan terbaru ini, siswa berkesempatan mengunjungi Goa
+              Jatijajar sebagai bagian dari program industri. Mereka tidak hanya
+              mendapatkan wawasan tentang kekayaan alam, tetapi juga belajar
+              tentang nilai budaya dan sejarah gua.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
