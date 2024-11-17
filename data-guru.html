@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  </head>
+  <body class="bg-[#C5C5C5]">
+    <!-- navbar -->
+    <nav class="bg-[#1973A5] py-3">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-2 md:px-4 bg-[#1973A5]"
+      >
+        <a
+          href="index.html"
+          class="flex ml-5 items-center space-x-3 text-white font-bold rtl:space-x-reverse"
+        >
+          <img src="image/img/logo-smk.png" class="w-16 md:w-24" alt="" />
+          <span class="text-[12px] md:text-base">
+            SMK NEGERI 1 BP BANGSA RAJA
+          </span>
+        </a>
+
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-[#1973A5] md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="text-white bg-[#1973A5] hover:font-extrabold rounded-md px-3 py-2 font-medium"
+              >
+                Home
+              </a>
+            </li>
+
+            <li>
+              <button
+                id="dropdownNavbarLink"
+                data-dropdown-toggle="dropdownNavbar"
+                class="flex items-center justify-between w-full pt-2 px-3 text-white rounded md:border-0 hover:text-white md:pr-2 md:p-0 w-auto bg-[#1973A5]"
+              >
+                Profile
+                <svg
+                  class="w-2.5 h-2.5 ms-2.5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </button>
+
+              <!-- Dropdown menu -->
+              <div
+                id="dropdownNavbar"
+                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+              >
+                <ul
+                  class="py-2 text-sm text-black"
+                  aria-labelledby="dropdownLargeButton"
+                >
+                  <li>
+                    <a
+                      href="data-guru.html"
+                      class="block px-4 py-2 hover:bg-[#398FBF] text-black"
+                      >Data Guru</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-[#398FBF] hover:text-white"
+                      >Sejarah</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-[#398FBF] hover:text-white"
+                      >Profile Sekolah</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <button
+                id="dropdownNavbarLink"
+                data-dropdown-toggle="dropdownNavbar2"
+                class="flex items-center justify-between w-full py-2 px-3 text-white rounded md:border-0 hover:text-white md:pr-10 md:p-0 w-auto bg-[#1973A5]"
+              >
+                Informasi
+                <svg
+                  class="w-2.5 h-2.5 ms-2.5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </button>
+
+              <!-- Dropdown menu -->
+              <div
+                id="dropdownNavbar2"
+                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+              >
+                <ul
+                  class="py-2 text-sm text-black"
+                  aria-labelledby="dropdownLargeButton"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-[#398FBF] text-black"
+                      >Visi & Misi</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div>
+      <img
+        src="image/img/smkn1bpbangsaraja.jpg"
+        class="w-full"
+        alt="SMK Negeri 1 BP Bangsa Raja"
+      />
+    </div>
+
+    <div>
+      <table class="table text-center my-10 mx-auto">
+        <thead>
+          <tr class="bg-[#1973A5]">
+            <td>NAMA</td>
+            <td class="px-10">JENIS KELAMIN</td>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- 1 -->
+          <tr class="bg-[#939393]/80">
+            <td class="px-10">H. Sutoyo, S.Pd.I, M.M, M.Pd.I</td>
+            <td>Laki - Laki</td>
+          </tr>
+
+          <!-- 2 -->
+          <tr class="bg-[#FA55A5]">
+            <td class="px-10">Esy Lidia Susanti, S.Pd</td>
+            <td>Perempuan</td>
+          </tr>
+
+          <!-- 3 -->
+          <tr class="bg-[#939393]/80">
+            <td class="px-10">Rasyid Rido, S.Pd.M.Pd</td>
+            <td>Laki - Laki</td>
+          </tr>
+
+          <!-- 4 -->
+          <tr class="bg-[#FA55A5]">
+            <td class="px-10">Siti Mahfudhah, SE</td>
+            <td>Perempuan</td>
+          </tr>
+
+          <!-- 5 -->
+          <tr class="bg-[#939393]/80">
+            <td class="px-10">Dedi Sugiyanto, S.Pd</td>
+            <td>Laki - Laki</td>
+          </tr>
+
+          <!-- 6 -->
+          <tr class="bg-[#FA55A5]">
+            <td class="px-10">Haslindawati, S.Pd.Gr</td>
+            <td>Perempuan</td>
+          </tr>
+
+          <!-- 7 -->
+          <tr class="bg-[#939393]/80">
+            <td class="px-10">Edison, S.Si</td>
+            <td>Laki - Laki</td>
+          </tr>
+
+          <!-- 8 -->
+          <tr class="bg-[#FA55A5]">
+            <td class="px-10">Lili Suharningsih, ST</td>
+            <td>Perempuan</td>
+          </tr>
+
+          <!-- 9 -->
+          <tr class="bg-[#939393]/80">
+            <td class="px-10">Eryani, S.Pd</td>
+            <td>Perempuan</td>
+          </tr>
+
+          <!-- 10 -->
+          <tr class="bg-[#FA55A5]">
+            <td class="px-10">Iskandar S.Kom</td>
+            <td>Laki - Laki</td>
+          </tr>
+
+          <!-- 11 -->
+          <tr class="bg-[#939393]/80">
+            <td class="px-10">Ati Warisa, S.Pd</td>
+            <td>Perempuan</td>
+          </tr>
+
+          <!-- 12 -->
+          <tr class="bg-[#FA55A5]">
+            <td class="px-10">Endang Hastuti, S.Pd</td>
+            <td>Perempuan</td>
+          </tr>
+
+          <!-- 13 -->
+          <tr class="bg-[#939393]/80">
+            <td class="px-10">Marjani, M.Pd</td>
+            <td>Laki - Laki</td>
+          </tr>
+
+          <!-- 14 -->
+          <tr class="bg-[#FA55A5]">
+            <td class="px-10">Heraliana, S.Pd</td>
+            <td>Perempuan</td>
+          </tr>
+
+          <!-- 15 -->
+          <tr class="bg-[#939393]/80">
+            <td class="px-10">Suhaili, S.Pd</td>
+            <td>Laki - Laki</td>
+          </tr>
+
+          <!-- 16 -->
+          <tr class="bg-[#FA55A5]">
+            <td class="px-10">Nur Nahariyanti, S.Pd.I</td>
+            <td>Perempuan</td>
+          </tr>
+
+          <!-- 17 -->
+          <tr class="bg-[#FA55A5]">
+            <td class="px-10">Nurmawati, S.Pd.I</td>
+            <td>Perempuan</td>
+          </tr>
+
+          <!-- 18 -->
+          <tr class="bg-[#939393]/80">
+            <td class="px-10">Susilawati, S.Pd</td>
+            <td>Perempuan</td>
+          </tr>
+
+          <!-- 19 -->
+          <tr class="bg-[#FA55A5]">
+            <td class="px-10">Nurhayati N, S.Pd</td>
+            <td>Perempuan</td>
+          </tr>
+
+          <!-- 20 -->
+          <tr class="bg-[#939393]/80">
+            <td class="px-10">Yeni Muslia, S.Pd</td>
+            <td>Perempuan</td>
+          </tr>
+
+          <!-- 21 -->
+          <tr class="bg-[#FA55A5]">
+            <td class="px-10">Lia Amelia Ayatillah, S.Pd</td>
+            <td>Perempuan</td>
+          </tr>
+
+          <!-- 22 -->
+          <tr class="bg-[#FA55A5]">
+            <td class="px-10">Edo Darmawan, S.Sos</td>
+            <td>Laki - Laki</td>
+          </tr>
+
+          <!-- 23 -->
+          <tr class="bg-[#939393]/80">
+            <td class="px-10">Diana Novitasari, S.Pd. MSc</td>
+            <td>Perempuan</td>
+          </tr>
+
+          <!-- 24 -->
+          <tr class="bg-[#FA55A5]">
+            <td class="px-10">Dewi Merisa, S.Pd</td>
+            <td>Perempuan</td>
+          </tr>
+
+          <!-- 25 -->
+          <tr class="bg-[#939393]/80">
+            <td class="px-10">Alfiyatur Rosyida, S.Pd</td>
+            <td>Laki - Laki</td>
+          </tr>
+
+          <!-- 26 -->
+          <tr class="bg-[#FA55A5]">
+            <td class="px-10">Pujiyono, Amd</td>
+            <td>Laki - Laki</td>
+          </tr>
+
+          <!-- 27 -->
+          <tr class="bg-[#939393]/80">
+            <td class="px-10">Kholik Mawardi</td>
+            <td>Laki - Laki</td>
+          </tr>
+
+          <!-- 28 -->
+          <tr class="bg-[#FA55A5]">
+            <td class="px-10">Angga Yudi Rahman</td>
+            <td>Laki - Laki</td>
+          </tr>
+
+          <!-- 29 -->
+          <tr class="bg-[#939393]/80">
+            <td class="px-10">Estalia, S.Pd</td>
+            <td>Perempuan</td>
+          </tr>
+
+          <!-- 30 -->
+          <tr class="bg-[#FA55A5]">
+            <td class="px-10">Angga Setiawan, Amd.Kom</td>
+            <td>Laki - Laki</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- footer -->
+    <div class="bg-[#1973A5]">
+      <p class="text-center font-bold text-xl text-white py-5">
+        SMK NEGERI 1 BP BANGSA RAJA
+      </p>
+      <p
+        class="text-center font-bold text-xl text-[#1973A5] py-5 border-t-2 border-white"
+      >
+        SMK NEGERI 1 BP BANGSA RAJA
+      </p>
+    </div>
+  </body>
+</html>
