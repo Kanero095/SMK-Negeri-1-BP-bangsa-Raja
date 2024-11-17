@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sejarah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  </head>
+  <body class="bg-[#000]">
+    <!-- navbar -->
+    <nav class="bg-[#1973A5] py-3">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-2 md:px-4 bg-[#1973A5]"
+      >
+        <a
+          href="index.html"
+          class="flex ml-5 items-center space-x-3 text-white font-bold rtl:space-x-reverse"
+        >
+          <img src="image/img/logo-smk.png" class="w-16 md:w-24" alt="" />
+          <span class="text-[12px] md:text-base">
+            SMK NEGERI 1 BP BANGSA RAJA
+          </span>
+        </a>
+
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-[#1973A5] md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="text-white bg-[#1973A5] hover:font-extrabold rounded-md px-3 py-2 font-medium"
+              >
+                Home
+              </a>
+            </li>
+
+            <li>
+              <button
+                id="dropdownNavbarLink"
+                data-dropdown-toggle="dropdownNavbar"
+                class="flex items-center justify-between w-full pt-2 px-3 text-white rounded md:border-0 hover:text-white md:pr-2 md:p-0 w-auto bg-[#1973A5]"
+              >
+                Profile
+                <svg
+                  class="w-2.5 h-2.5 ms-2.5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </button>
+
+              <!-- Dropdown menu -->
+              <div
+                id="dropdownNavbar"
+                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+              >
+                <ul
+                  class="py-2 text-sm text-black"
+                  aria-labelledby="dropdownLargeButton"
+                >
+                  <li>
+                    <a
+                      href="data-guru.html"
+                      class="block px-4 py-2 hover:bg-[#398FBF] text-black"
+                      >Data Guru</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="sejarah.html"
+                      class="block px-4 py-2 hover:bg-[#398FBF] hover:text-white"
+                      >Sejarah</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="profile-sekolah.html"
+                      class="block px-4 py-2 hover:bg-[#398FBF] hover:text-white"
+                      >Profile Sekolah</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="jurusan.html"
+                      class="block px-4 py-2 hover:bg-[#398FBF] hover:text-white"
+                      >Jurusan</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <button
+                id="dropdownNavbarLink"
+                data-dropdown-toggle="dropdownNavbar2"
+                class="flex items-center justify-between w-full py-2 px-3 text-white rounded md:border-0 hover:text-white md:pr-10 md:p-0 w-auto bg-[#1973A5]"
+              >
+                Informasi
+                <svg
+                  class="w-2.5 h-2.5 ms-2.5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </button>
+
+              <!-- Dropdown menu -->
+              <div
+                id="dropdownNavbar2"
+                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+              >
+                <ul
+                  class="py-2 text-sm text-black"
+                  aria-labelledby="dropdownLargeButton"
+                >
+                  <li>
+                    <a
+                      href="visi-misi.html"
+                      class="block px-4 py-2 hover:bg-[#398FBF] text-black"
+                      >Visi & Misi</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mb-10">
+      <div>
+        <img src="image/img/logo-smk.png" class="mx-auto" alt="" />
+      </div>
+      <div class="text-center">
+        <p class="md:text-2xl text-[#1973A5] font-bold text-xl">VISI & MISI</p>
+        <p class="text-white font-bold text-base md:text-lg">
+          SMK NEGERI 1 BP BANGSA RAJA
+        </p>
+      </div>
+
+      <div class="mt-5">
+        <!-- visi -->
+        <div class="text-center">
+          <button
+            id="dropdownDefaultButton"
+            data-dropdown-toggle="dropdownVisi"
+            class="text-[#000] w-96 md:w-96 bg-[#FFFFFF] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-lg px-10 md:px-5 py-2.5 text-center inline-flex items-center"
+            type="button"
+          >
+            VISI
+            <svg
+              class="w-2.5 h-2.5 ms-60 md:ms-72"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 10 6"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 1 4 4 4-4"
+              />
+            </svg>
+          </button>
+
+          <!-- Dropdown menu -->
+          <div
+            id="dropdownVisi"
+            class="z-10 hidden mx-auto bg-white divide-y divide-gray-100 rounded-lg shadow w-full md:w-96 py-2"
+          >
+            <ul
+              class="text-sm text-gray-700 w-full md:w-96"
+              aria-labelledby="dropdownDefaultButton"
+            >
+              <li>
+                MENJADI PUSAT PENDIDIKAN DAN PELATIHAN KEJURUAN TERPADU YANG
+                BERLANDASKAN IMTAQ DAN UNGGUL DALAM IMTEK
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- misi -->
+        <div class="text-center mt-3">
+          <button
+            id="dropdownDefaultButton"
+            data-dropdown-toggle="dropdownMisi"
+            class="text-[#000] w-96 md:w-96 bg-[#FFFFFF] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-lg px-10 md:px-5 py-2.5 text-center inline-flex items-center"
+            type="button"
+          >
+            MISI
+            <svg
+              class="w-2.5 h-2.5 ms-60 md:ms-72"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 10 6"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 1 4 4 4-4"
+              />
+            </svg>
+          </button>
+
+          <!-- Dropdown menu -->
+          <div
+            id="dropdownMisi"
+            class="z-10 hidden mx-auto bg-white divide-y divide-gray-100 rounded-lg shadow w-full md:w-96 px-2 py-2"
+          >
+            <ul
+              class="text-sm text-gray-700 w-full md:w-96 text-left"
+              aria-labelledby="dropdownDefaultButton"
+            >
+              <li>A. MENUMBUHKAN SEMANGA IMTAQ DAN BERAHLAQ MULIA</li>
+              <li>B. MEMBUDAYAKAN CINTA LINGKUNGAN</li>
+              <li>C. MELAKSANAKAN PEMBELAJARAN SECARA EFEKTIF DAN EFISIEN</li>
+              <li>D. MENYELENGGARAKAN PELATIHAN KETERAMPILAN KEJURUAN</li>
+              <li>E. MEMANFAATKAN TEKNOLOGI UNTUK PEMBELAJARAN</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="bg-[#1973A5]">
+      <p class="text-center font-bold text-xl text-white py-5">
+        SMK NEGERI 1 BP BANGSA RAJA
+      </p>
+      <p
+        class="text-center font-bold text-xl text-[#1973A5] py-5 border-t-2 border-white"
+      >
+        SMK NEGERI 1 BP BANGSA RAJA
+      </p>
+    </div>
+  </body>
+</html>
