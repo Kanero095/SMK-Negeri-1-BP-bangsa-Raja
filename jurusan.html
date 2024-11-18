@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jurusan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  </head>
+  <body class="bg-[#000]">
+    <!-- navbar -->
+    <nav class="bg-[#1973A5] py-3">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-2 md:px-4 bg-[#1973A5]"
+      >
+        <a
+          href="index.html"
+          class="flex ml-5 items-center space-x-3 text-white font-bold rtl:space-x-reverse"
+        >
+          <img src="image/img/logo-smk.png" class="w-16 md:w-24" alt="" />
+          <span class="text-[12px] md:text-base">
+            SMK NEGERI 1 BP BANGSA RAJA
+          </span>
+        </a>
+
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-[#1973A5] md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="text-white bg-[#1973A5] hover:font-extrabold rounded-md px-3 py-2 font-medium"
+              >
+                Home
+              </a>
+            </li>
+
+            <li>
+              <button
+                id="dropdownNavbarLink"
+                data-dropdown-toggle="dropdownNavbar"
+                class="flex items-center justify-between w-full pt-2 px-3 text-white rounded md:border-0 hover:text-white md:pr-2 md:p-0 w-auto bg-[#1973A5]"
+              >
+                Profile
+                <svg
+                  class="w-2.5 h-2.5 ms-2.5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </button>
+
+              <!-- Dropdown menu -->
+              <div
+                id="dropdownNavbar"
+                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+              >
+                <ul
+                  class="py-2 text-sm text-black"
+                  aria-labelledby="dropdownLargeButton"
+                >
+                  <li>
+                    <a
+                      href="data-guru.html"
+                      class="block px-4 py-2 hover:bg-[#398FBF] text-black"
+                      >Data Guru</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="sejarah.html"
+                      class="block px-4 py-2 hover:bg-[#398FBF] hover:text-white"
+                      >Sejarah</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="profile-sekolah.html"
+                      class="block px-4 py-2 hover:bg-[#398FBF] hover:text-white"
+                      >Profile Sekolah</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="jurusan.html"
+                      class="block px-4 py-2 hover:bg-[#398FBF] hover:text-white"
+                      >Jurusan</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <button
+                id="dropdownNavbarLink"
+                data-dropdown-toggle="dropdownNavbar2"
+                class="flex items-center justify-between w-full py-2 px-3 text-white rounded md:border-0 hover:text-white md:pr-10 md:p-0 w-auto bg-[#1973A5]"
+              >
+                Informasi
+                <svg
+                  class="w-2.5 h-2.5 ms-2.5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </button>
+
+              <!-- Dropdown menu -->
+              <div
+                id="dropdownNavbar2"
+                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+              >
+                <ul
+                  class="py-2 text-sm text-black"
+                  aria-labelledby="dropdownLargeButton"
+                >
+                  <li>
+                    <a
+                      href="visi-misi.html"
+                      class="block px-4 py-2 hover:bg-[#398FBF] text-black"
+                      >Visi & Misi</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div>
+      <!-- 1 -->
+      <div
+        class="bg-gray-100 lg:py-12 lg:flex lg:flex-row-reverse lg:justify-center"
+      >
+        <div
+          class="bg-white lg:mx-8 lg:flex lg:flex-row-reverse lg:max-w-5xl shadow-lg lg:rounded-lg shadow-[#C29C04]"
+        >
+          <div class="lg:w-1/2">
+            <div
+              class="h-64 bg-cover lg:rounded-lg lg:h-full"
+              style="background-image: url('image/activity/0.jpg')"
+            ></div>
+          </div>
+          <div class="py-12 px-6 max-w-xl lg:max-w-5xl lg:w-1/2">
+            <h2 class="text-3xl font-bold">
+              PROGRAM KEAHLIAN UTAMA <br />
+              <span class="text-xl">DI SMK NEGERI 1 BP BANGSA RAJA</span>
+            </h2>
+            <p class="mt-4 text-gray-600">
+              SMK Negeri 1 BP Bangsa Raja memiliki tiga program keahlian utama
+              yang siap mempersiapkan siswa-siswi menuju dunia kerja.
+              Jurusan Teknik Komputer dan Jaringan (TKJ) berfokus pada
+              keterampilan di bidang jaringan komputer dan teknologi informasi,
+              memberikan keahlian dalam instalasi, perawatan, dan perbaikan
+              jaringan komputer. Jurusan Otomatisasi dan Tata Kelola Perkantoran
+              (OTKP) dirancang untuk melatih siswa menjadi tenaga administrasi
+              perkantoran yang terampil dan profesional. Sedangkan
+              jurusan Teknik dan Bisnis Sepeda Motor (TBSM) mempersiapkan siswa
+              untuk menjadi ahli di bidang perawatan dan perbaikan kendaraan
+              roda dua, serta membekali mereka dengan kemampuan teknis dalam
+              bisnis sepeda motor. Ketiga jurusan ini memberikan bekal
+              keterampilan praktis dan teoritis untuk menghadapi tuntutan dunia
+              industri yang semakin kompetitif.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="bg-gray-100 lg:py-12 lg:flex lg:justify-center">
+        <div
+          class="bg-white lg:mx-8 lg:flex lg:max-w-5xl shadow-lg shadow-[#7F0741] lg:rounded-lg"
+        >
+          <div class="lg:w-1/2">
+            <div
+              class="h-64 bg-cover lg:rounded-lg lg:h-full"
+              style="background-image: url('image/activity/1.jpeg')"
+            ></div>
+          </div>
+          <div class="py-12 px-6 max-w-xl lg:max-w-5xl lg:w-1/2">
+            <h2 class="text-3xl font-bold">
+              # TKJ <br />
+              <span class="text-xl">Teknik Komputer dan Jaringan</span>
+            </h2>
+            <p class="mt-4 text-gray-600">
+              Jurusan Teknik Komputer dan Jaringan (TKJ) di SMK Negeri 1 BP
+              Bangsa Raja adalah pilihan yang ideal bagi siswa yang tertarik
+              mendalami dunia teknologi informasi, khususnya komputer dan
+              jaringan. Program ini dirancang untuk memberikan pendidikan
+              menyeluruh, dengan fokus pada keterampilan teknis, pemahaman
+              mendalam tentang sistem jaringan, serta pengembangan kompetensi
+              praktis yang sangat dibutuhkan di dunia kerja. Melalui jurusan
+              TKJ, SMK Negeri 1 BP Bangsa Raja bertujuan melahirkan tenaga kerja
+              yang siap bersaing dan mampu mengikuti perkembangan pesat di
+              sektor teknologi informasi.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div
+        class="bg-gray-100 lg:py-12 lg:flex lg:flex-row-reverse lg:justify-center"
+      >
+        <div
+          class="bg-white lg:mx-8 lg:flex lg:flex-row-reverse lg:max-w-5xl shadow-lg shadow-[#043966] lg:rounded-lg"
+        >
+          <div class="lg:w-1/2">
+            <div
+              class="h-64 bg-cover lg:rounded-lg lg:h-full"
+              style="
+                background-image: url('image/activity/WhatsApp\ Image\ 2024-10-27\ at\ 21.13.23\(1\).jpeg');
+              "
+            ></div>
+          </div>
+          <div class="py-12 px-6 max-w-xl lg:max-w-5xl lg:w-1/2">
+            <h2 class="text-3xl font-bold">
+              # TBSM <br />
+              <span class="text-xl"
+                >Otomatisasi dan Tata Kelola Perkantoran</span
+              >
+            </h2>
+            <p class="mt-4 text-gray-600">
+              Jurusan Teknik dan Bisnis Sepeda Motor (TBSM) di SMK Negeri 1 BP
+              Bangsa Raja adalah program keahlian yang bertujuan membekali siswa
+              dengan pengetahuan, keterampilan, dan sikap profesional dalam
+              bidang perawatan, perbaikan, dan manajemen bisnis sepeda motor.
+              Jurusan ini didesain untuk mempersiapkan siswa menjadi tenaga ahli
+              di industri otomotif, khususnya yang berkaitan dengan sepeda
+              motor, serta memiliki kemampuan dalam mengelola usaha di bidang
+              otomotif.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="bg-gray-100 lg:py-12 lg:flex lg:justify-center">
+        <div
+          class="bg-white lg:mx-8 lg:flex lg:max-w-5xl shadow-lg shadow-[#31E8C3] lg:rounded-lg"
+        >
+          <div class="lg:w-1/2">
+            <div
+              class="h-64 bg-cover lg:rounded-lg lg:h-full"
+              style="background-image: url('image/activity/01.jpeg')"
+            ></div>
+          </div>
+          <div class="py-12 px-6 max-w-xl lg:max-w-5xl lg:w-1/2">
+            <h2 class="text-3xl font-bold">
+              # OTKP <br />
+              <span class="text-xl">Teknik Komputer dan Jaringan</span>
+            </h2>
+            <p class="mt-4 text-gray-600">
+              Jurusan Otomatisasi dan Tata Kelola Perkantoran (OTKP) di SMK
+              Negeri 1 BP Bangsa Raja adalah program keahlian yang dirancang
+              untuk mempersiapkan siswa menjadi tenaga kerja yang kompeten di
+              bidang administrasi perkantoran modern. Jurusan ini mengajarkan
+              keterampilan teknis, manajerial, dan interpersonal yang diperlukan
+              dalam mengelola berbagai kegiatan administratif di lingkungan
+              kerja, baik di perusahaan, lembaga pemerintahan, maupun organisasi
+              lainnya. Program ini mengintegrasikan teknologi terbaru dalam
+              bidang perkantoran untuk memenuhi kebutuhan dunia kerja yang
+              semakin berkembang.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="bg-[#1973A5]">
+      <p class="text-center font-bold text-xl text-white py-5">
+        SMK NEGERI 1 BP BANGSA RAJA
+      </p>
+      <p
+        class="text-center font-bold text-xl text-[#1973A5] py-5 border-t-2 border-white"
+      >
+        SMK NEGERI 1 BP BANGSA RAJA
+      </p>
+    </div>
+  </body>
+</html>
